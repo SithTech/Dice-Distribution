@@ -80,7 +80,26 @@ namespace Dice_Distribution
             int dice_mode = 0;
             string[] dice;
 
-            string help = "---Help---\n ls - list\n i - import\n e - export\n ch - change herd\n n - new\n s - search\n d - delete\n b - Back\n q - quit\n clear\n";
+            //Define the help menu
+            string help = 
+            "---Help---\n " +
+            "\n" +
+            "Welcome to the Dice Distribution Program.\n" +
+            "This program was created to solve a debate between my brother and I over the distribution of dice rolls.\n" +
+            "Enjoy\n" +
+            "\n" +
+            "Upon startup the user needs to select a dice rolling mode, normal or distribution.\n" +
+            "In normal rolling mode allows the user to roll any dice by first giving the number of dice to roll followed by 'd' and the number of side of each dice.\n" +
+            "Example: 1d6 rolls one 6-sided dice\n" +
+            "\n" +
+            "Options:\n" +
+            "\tr, roll -- Selects the normal dice rolling mode, for those who just want to roll dice\n" + 
+            "\td, dist -- Selects the distribution dice rolling mode\n" +
+            "\th, help -- Displays this help menu\n" +
+            "\tc, clear -- Clears the console of text\n" +
+            "\tq, quit -- Exits the program\n" +
+            "\tb, back -- Returns to the start menu. This option is only valid once a rolling mode has been selected.\n" +
+            "\n";
 
 
             Console.WriteLine("---Dice---");
@@ -159,6 +178,7 @@ namespace Dice_Distribution
 
                                 switch (option)
                                 {
+                                    case "c"
                                     case "clear":
                                         {
                                             Console.Clear();
@@ -205,6 +225,7 @@ namespace Dice_Distribution
 
                                 switch (option)
                                 {
+                                    case "c":
                                     case "clear":
                                         {
                                             Console.Clear();
